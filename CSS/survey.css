@@ -1,0 +1,170 @@
+body {
+    width: 100%;
+    background: #5F9EA0;
+    margin: 0px;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: lightyellow;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  p {
+    color: black;
+   font-weight: 700;
+    font-family: cursive;
+        }
+    
+  #title {
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+  }
+  
+  .green {
+    width: 60%;
+    height: 150px;
+    background: green;
+    margin: auto;
+  }
+    
+    #description {
+    color: lightyellow;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1.5em;
+    }
+  
+  #survey-form {
+    margin: 5px auto;
+    padding: 5px 0;
+    text-align: center;
+    background: lightgray;
+    font-size: 1.1em;
+    width: 60%;
+    }
+  
+  ::placeholder {
+    color: Sienna;
+    opacity: 0.5;
+    text-align: center;
+    }
+  
+  
+  #number {
+    width: 20em;
+  }
+  
+  #box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1%;
+  } 
+  
+  .destination {
+    border: solid 1px slategray;
+    border-radius: 5px;
+    margin: 0.8em 1%;
+    padding-bottom: 0.8em;
+     }
+  
+    input {
+    max-width: 50%;
+    line-height: 1.7rem;
+    border-radius: 5px;
+    border: none;
+      font-size: 1.1rem;
+    }
+  
+  input:focus {
+    background: lightgreen;
+    border: 2px outset teal;
+  }
+  
+  select {
+    color: Sienna;
+    background: #FFFFFF;
+    font-size: 1.1rem;
+    opacity: 0.5;
+    min-width: 30%;
+    Height: 1.7rem;
+    border-radius: 5px;
+    text-align: center;
+    text-align-last: center; /* for Google Chrome browser */
+      }
+  
+  select:active {
+    color:red;
+  }
+  
+  label {
+    color: teal;
+  }
+  
+  label:hover {
+    background: #B0C4DE;
+      }
+  
+  textarea {
+    min-width: 30%;
+    height: auto;
+    border: 1px solid sienna;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: cursive;
+      }
+    
+  button {
+    border: 2px solid #5F9EA0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #3399FF, #87CEEB, white);
+    font-size: 1.1em;
+    width: 20%;
+    height: 30px;
+  }
+  
+  button:hover {
+    background: white;
+  }
+  
+  #map {  
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/BlankMap-World.png/1200px-BlankMap-World.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19%;
+    height: 30%;
+    position: fixed;
+    left: 5px;
+    top: 20%;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    transform: rotate (180deg);
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    }
+  
+  @keyframes rotation {
+    0% {transform: rotate(45deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(135deg);}
+    25% {transform: rotate(180deg);}
+  }
+  
+  
+  @media (max-width: 640px)
+  {button {width: 50%;}}
+  @media (max-width: 640px)
+  {body {font-size: 0.9em;}}
+  @media (max-width: 640px)
+  {#map {display: none;}}
+  @media (max-width: 640px)
+  {input, select, textarea {font-size: 1em;}}
+  @media (max-width: 640px)
+  {.destination {display: flex;
+    flex-direction: column; align-items: flex-start;}}
