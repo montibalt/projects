@@ -1,0 +1,172 @@
+
+body {
+    margin: 5px 10px;
+    padding: 5px;
+     font-size: 1em;
+      }
+   
+   @media (max-width: 640px)
+   {body {font-size: 0.8em;}}
+   
+   h1 {
+       font-size: 2em;
+      }
+   
+   .fs {
+     text-align: center;
+   }
+     
+   .letter {
+       color: red;
+         }
+   
+   #title {
+     background: gray;
+     max-width: 100%;
+     text-align: center;
+     padding: 0px 20px ; 
+     margin: auto;
+   }
+   
+   #title:hover {
+     background: #FFE4E1;
+     animation-name: colorful;
+     animation-duration: 3s;
+     animation-timing-function: ease-in;
+   }
+   
+   @keyframes colorful {
+     0% {
+       background-color: gray;
+     }
+     50% {
+         background-color: beige;
+       }
+     100% {
+       background-color: #FFE4E1;
+     }
+   }
+     
+   #main {
+     padding: 10px;
+     margin: 10px;
+   }
+     h2 {
+          color:orange;
+         }
+    h3 {
+      color: independence;
+   }
+   
+    #img-div {
+     position: center;
+     background: lightgray;
+     border-radius: 10px;
+     }
+   
+     figure {
+     text-align: center;
+   }
+   
+   #image {
+       width: auto;
+       height: auto;
+       border-radius: 10px;
+       margin: auto;
+       }
+   
+   #image:hover {
+     transform: scale(1.2);
+     animation-name: time;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-out;
+     }
+   
+   @keyframes time {
+     0% { transform: scale(1);}
+     100% {transform: scale(1.2);}
+   }
+   
+   img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+   }
+   
+   #img-caption {
+     color: ash;
+     font-size: 1.05em;
+     margin: 1px 50px;
+     padding: 5px 100px;
+          }
+   
+   @media (max-width: 480px)
+   { #img-caption {padding: 0; margin:0;}
+       }
+   
+   #tribute-info {
+     margin: 50px;
+   }
+     
+   @media (max-width: 480px)
+   { 
+     #tribute-info {margin: auto; text-align: justify;}
+     h2 {text-align: center;}
+     h3 {color: brown; text-align: center;}
+                 }
+   
+   #quote {
+     background: linear-gradient(45deg, gray, lightgray, pink);
+     width: 50%;
+     border: 1px solid blue;
+     padding: 5px;
+     margin: 0px auto 0px auto;
+     text-align: center;
+     }
+   
+   #quote:hover {
+     border: 1px ridge red;
+     padding: 6px;
+     margin: 15px auto 15px auto;
+     background: #FFE4E1;
+     box-shadow: 10px 20px 20px black;
+       }
+     
+   #tribute-link {
+        font-size: 18px;
+        color: rgb(0, 139, 139);
+          }
+   
+   @media (max-width: 480px)
+   {
+     #tribute-link {font-size: 95%;}
+     }
+   
+   #tribute-link:hover {
+     color: darkblue;
+     font-size: 1.2em;
+     }
+   
+   #tribute-link:visited {
+     color: orange;}
+   
+   #up {
+     width: 70px;
+     height: 70px;
+     border: 5px;
+     background: #FFB6C1;
+     opacity: 0.7;
+     text-align: center;
+     margin: auto;
+     position: relative;
+     top: 20px;
+     }
+   
+    a:hover {
+       color: darkgreen;
+     }
+   a:visited {
+     color: maroon;
+   }
+   
