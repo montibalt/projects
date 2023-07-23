@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/survey.css">
+    <title>Travel Survey</title>
+</head>
+  <body>
+    <div class="green">
+    <h1 id="title">Travel Survey</h1>
+    <p id="description"> Questionnaire about traveling habits </p>
+      </div>
+    <div>
+    <form id="survey-form">
+      <div>      
+        <label id="name-label" for="name"><p><b>Your Name</b></p> </label>
+      </div>
+      <input id="name" name="Your name" type="text" placeholder="Enter your name" required> 
+      <div>
+        <label id="email-label" for="email"> <p><b>Your Email</b></p> </label>
+        </div>
+      <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+        <div>
+         <label id="number-label" for="number"> <p><b>Your Age</b></p></label>
+         </div>
+      <input id="number" name="number" type="number" min="12" max="120" placeholder="Your age" title="Age from 12 to 120" required>
+          
+          <p> How often do you travel ? </p>
+          <select id="dropdown" name="travel"  required>
+            <option disabled selected>Choose option</option>
+            <option value="1">1-2 times a year</option>
+            <option value="3">3-4 times a year</option>
+            <option value="5">More than 5 times a year</option>
+          </select>
+               
+          <div id="box">
+            <p><b>Choose your trips usual duration</b></p>
+             <label>
+            <input name="duration" 
+            type="radio"
+            value="1" checked> Less than a week
+             </label>
+            <label>
+            <input name="duration"                             type="radio"
+            value="2"> 1-2 weeks
+            </label>
+            <label>
+                <input name="duration" 
+                 type="radio"
+                 value="3"> Two weeks to a month
+            </label>
+            <label>
+            <input name="duration" 
+             type="radio"
+             value="4"> More than a month
+            </label>
+          </div>
+                    <div class="destination">
+          <p><b>Your preferences for destinations
+            </b></p>
+            <label> 
+              <input type="checkbox" name="destination" value="europe">Europe</label>
+            <label> 
+              <input type="checkbox" name="destination" value="north">North America</label>
+            <label> 
+              <input type="checkbox" name="destination" value="south">South America</label>
+          <label> 
+              <input type="checkbox" name="destination" value="africa">Africa</label>
+          <label> 
+              <input type="checkbox" name="destination" value="asia">Asia</label>
+          <label> 
+              <input type="checkbox" name="destination" value="australia">Australia and Oceania</label>
+          </div>
+          <p><b>What activities do you usually do while traveling</b></p>
+          <textarea id="text" name="activity" placeholder="Type your answer here..." maxlength
+  ="350" cols="30" rows="3" style="background: azure;"></textarea>
+            <p>
+            <button type="submit" id="submit" autofocus>Submit</button>
+            </p>
+              </form>
+           </div>
+          <div  id="map"></div>
+    </body>
+    </html>
